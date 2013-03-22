@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Oviyam 2.0 Settings</title>
+
+        <script type="text/javascript" src="js/lib/jquery-latest.js"></script>
+        <script type="text/javascript" src="js/lib/jquery-ui-latest.js"></script>
+
+        <!-- theme switcher -->
+        <script type="text/javascript" src="js/lib/debug.js"></script>
+        <script type="text/javascript" src="js/lib/themeswitchertool.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                $.get("UserConfig.do", {'settings':'roles', 'todo':'READ'}, function(data){
+                    var roles = data.trim();
+                    roles = roles.substring(roles.indexOf(':')+1, roles.length-1).split(",");
+
+                    if($.inArray("WebAdmin", roles) >=  0) {
+                        $( "#tabs" ).tabs();
+                    } else {
+                        $( "#tabs" ).tabs().tabs( "remove", 0);
+                    }
+                });
+
+                $.get("UserConfig.do", {'settings':'theme', 'todo':'READ'},
+                    function(data){
+                        $('#switcher').themeswitcher({
+                            loadTheme: data.trim(),
+                            cookieName:''
+			});
+            		if(data.trim() == 'Dark Hive') {
+                            $('.ui-widget-content').css('background', 'black');
+            		}
+                });
+
+                $("#tabs").css("height","99%");
+
+            });  //for document.ready
+
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="css/jquery.ui.all.css" />
+
+    </head>
+
+    <body>
+
+        <div class="demo">
+
+            <div id="tabs">
+                <ul>
+                    <li><a href="server.html">Server</a></li>
+                    <li><a href="queryParam.html">Query Params</a></li>
+                    <li><a href="preferences.html">Preferences</a></li>
+                </ul>
+
+            </div>
+
+        </div><!-- End demo -->
+
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Oviyam 2.0 Login Page</title>
+        <link rel="stylesheet" href="css/login.css" type="text/css" />
+
+        <script type="text/javascript">
+            //if(navigator.platform.indexOf('iPad') != -1) {
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+                var loc = window.location.toString();
+                loc = loc.substring(0, loc.indexOf('/', loc.lastIndexOf(':')));
+                window.location = loc + '/iviewer';
+            }
+
+        </script>
+    </head>
+    <body onload="document.login.j_username.focus()">
+    <section>
+        <form name="login" id="login" action="j_security_check" method="POST">
+            <fieldset>
+                <legend><font>Login</font></legend>
+                <h1>Oviyam 2.0</h1> <h4>HTML5 Web DICOM Viewer</h4>
+                <label><font>Username </font><span class="mandatory"><font>*</font></span><font> :</font></label>
+                <input type="text" name="j_username" class="textInput" required>
+
+                <label><font>Password </font><span class="mandatory"><font>*</font></span><font> :</font></label>
+                <input type="password" name="j_password" class="textInput" required>
+
+                <input type="submit" name="submit" id="loginButton" value="Login" class="button disabled">
+            </fieldset>
+        </form>
+    </section>
+    <footer align="center">Oviyam 2.0 requires latest version of Google Chrome / Safari.</footer>
+</body>
+</html>

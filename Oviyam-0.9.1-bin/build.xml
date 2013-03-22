@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<project name="build_oviyam" default="war">
+
+<property name="build.dest" value="~/Desenvolvimento/PACS/dcm4chee-2013/dcm4chee-2.17.3-mysql/server/default/deploy>
+<path id="compile.classpath">
+<fileset dir="oviyam/WebContent/WEB-INF/lib">
+	<include name="*.jar"/>
+</fileset>
+
+</path>
+
+
+<target name="war">
+<war destfile="dist/gnectviewer_0.9.1.war" webxml="oviyam/WEB-INF/web.xml">
+	<fileset dir="oviyam"/>
+	<lib dir="oviyam/WEB-INF/lib"/>
+	<classes dir="oviyam/WEB-INF/classes"/>
+</war>
+
+<echo message="Copiando arquivo para pasta de build"/>
+
+<copy file="dist/oviyam.war" todir="~/Desenvolvimento/PACS/dcm4chee-2013/dcm4chee-2.17.3-mysql//server/default/deploy" 
+overwrite="true"/>
+<echo message="OK. Servidor atualizado."/>
+
+</target>
+
+</project>

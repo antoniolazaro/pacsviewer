@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app id="WebApp_9" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+ 
+ 	<servlet>
+		<servlet-name>wado</servlet-name>
+		<display-name>WADO - Web Access to DICOM Persistent Objects</display-name>
+		<servlet-class>org.dcm4chex.wado.web.WADOServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>oviyam</servlet-name>		
+		<servlet-class>in.raster.oviyam.servlet.Validator</servlet-class>
+	</servlet>	
+	
+	<servlet>
+		<servlet-name>DcmImage</servlet-name>		
+		<servlet-class>in.raster.oviyam.servlet.DcmImage</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>update</servlet-name>		
+		<servlet-class>in.raster.oviyam.servlet.UpdateServerConfig</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>serverconfig</servlet-name>		
+		<servlet-class>in.raster.oviyam.servlet.ServerConfig</servlet-class>
+	</servlet>	
+	
+	<servlet>
+		<servlet-name>DICOMDataset</servlet-name>		
+		<servlet-class>in.raster.oviyam.servlet.DICOMDataset</servlet-class>
+	</servlet>	
+	
+	<servlet>
+		<servlet-name>DcmWindowLevel</servlet-name>		
+		<servlet-class>in.raster.oviyam.servlet.DcmWindowLevel</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>DcmAttributeRetrieve</servlet-name>		
+		<servlet-class>in.raster.oviyam.servlet.DcmAttributeRetrieve</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>MultiFrames</servlet-name>		
+		<servlet-class>in.raster.oviyam.servlet.MultiFrames</servlet-class>
+	</servlet>	
+	
+	<servlet-mapping>
+		<servlet-name>MultiFrames</servlet-name>
+		<url-pattern>/MFrames</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>DcmWindowLevel</servlet-name>
+		<url-pattern>/DcmWL</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>DcmAttributeRetrieve</servlet-name>
+		<url-pattern>/DcmAttr</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>wado</servlet-name>
+		<url-pattern>/wado</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>oviyam</servlet-name>
+		<url-pattern>/oviyam</url-pattern>
+	</servlet-mapping>
+		
+	<servlet-mapping>
+		<servlet-name>DcmImage</servlet-name>
+		<url-pattern>/Image.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>update</servlet-name>
+		<url-pattern>/update.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>serverconfig</servlet-name>
+		<url-pattern>/serverconfig.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>DICOMDataset</servlet-name>
+		<url-pattern>/DICOMDataset.do</url-pattern>
+	</servlet-mapping>
+	
+	<!--welcome-file-list>
+        <welcome-file>/login/login.jsp</welcome-file>
+    </welcome-file-list-->
+    
+    <session-config>
+  		<session-timeout>15</session-timeout>
+	</session-config>
+    
+        <filter>
+        <filter-name>SecurityFilter</filter-name>
+        <filter-class>br.com.gnect.oviyam.SecurityFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>SecurityFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    
+     <security-constraint>
+     <web-resource-collection>
+       <web-resource-name>dispatcher</web-resource-name>
+       <url-pattern>/*</url-pattern>
+       <http-method>DELETE</http-method>
+	   <http-method>GET</http-method>
+	   <http-method>POST</http-method>
+	   <http-method>PUT</http-method>
+     </web-resource-collection>
+     <auth-constraint>
+       <role-name>WebUser</role-name>
+     </auth-constraint>
+     <user-data-constraint>
+       <transport-guarantee>NONE</transport-guarantee>
+     </user-data-constraint>
+   </security-constraint>
+    
+    <security-constraint><!--Exclude css and images here -->
+   <web-resource-collection>
+      <web-resource-name>Exclude from Security</web-resource-name>
+      <url-pattern>/images/*</url-pattern><!-- No security for images -->
+      <url-pattern>/css/*</url-pattern><!-- No security for css -->
+   </web-resource-collection>
+</security-constraint>
+  
+  <!--login-config>
+      <auth-method>BASIC</auth-method>
+      <realm-name>DicomView Login</realm-name>
+   </login-config-->
+
+    <login-config>
+    	<auth-method>FORM</auth-method>
+    	 <!--realm-name>file</realm-name-->
+    	<form-login-config>
+    	    <form-login-page>/login.jsp</form-login-page>
+    	    <form-error-page>/error.jsp</form-error-page>
+    	</form-login-config>
+    </login-config>
+    
+     <security-role>
+      <role-name>WebUser</role-name>
+   </security-role>
+
+</web-app>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <users>
+     <user>
+	<user-name>user</user-name>
+        <search-params>
+           <buttons>
+              <button>
+                <button-label>Today CT</button-label>
+                <date-criteria>t</date-criteria>
+                <time-criteria></time-criteria>
+                <modality>CT</modality>
+                <auto-refresh>0</auto-refresh>
+              </button>
+          </buttons>
+       </search-params>
+       <theme>Dark Hive</theme>
+       <viewer-slider>hide</viewer-slider>
+       <session-timeout>1800</session-timeout>
+     </user>
+   </users>
+
+   <servers>
+   </servers>
+
+   <calling-aet>OVIYAM2</calling-aet>
+</configuration>

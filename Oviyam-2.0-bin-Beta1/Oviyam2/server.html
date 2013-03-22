@@ -1,0 +1,90 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <script type="text/javascript" src="js/lib/jquery-latest.js"></script>
+        <script type="text/javascript" src="js/lib/jquery-ui-latest.js"></script>
+        <script type="text/javascript" src="js/server.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.ambiance.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/demo_table_jui.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.ambiance.css"/>
+        <!-- <link rel="stylesheet" type="text/css" href="css/jquery.ui.all.css" />
+        -->
+
+        <style type="text/css">
+            html, body {
+                font-size: 85%;
+                background:#000;
+            }
+        </style>
+
+        <style type="text/css">
+            .anchorBtn {
+                border-top: 1px solid #692435;
+                background: #27388c;
+                background: -webkit-gradient(linear, left top, left bottom, from(#1984cc), to(#27388c));
+                background: -webkit-linear-gradient(top, #1984cc, #27388c);
+                background: -moz-linear-gradient(top, #1984cc, #27388c);
+                background: -ms-linear-gradient(top, #1984cc, #27388c);
+                background: -o-linear-gradient(top, #1984cc, #27388c);
+                padding: 6.5px 13px;
+                -webkit-border-radius: 8px;
+                -moz-border-radius: 8px;
+                border-radius: 8px;
+                -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+                -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+                box-shadow: rgba(0,0,0,1) 0 1px 0;
+                text-shadow: rgba(0,0,0,.4) 0 1px 0;
+                color: #ffffff;
+                font-size: 14px;
+                font-family: Helvetica, Arial, Sans-Serif;
+                text-decoration: none;
+                vertical-align: middle;
+            }
+            .anchorBtn:hover {
+                border-top-color: #073257;
+                background: #073257;
+                color: #ccc;
+            }
+            .anchorBtn:active {
+                border-top-color: #2889c9;
+                background: #2889c9;
+            }
+        </style>
+
+    </head>
+    <body style="padding: 10px">
+        <div style="margin-top: 5px;">
+            <a id="verifyBtn" href="#" class="anchorBtn">Verify</a>
+            <a id="addBtn" href="#" class="anchorBtn">Add</a>
+            <a id="editBtn" href="#" class="anchorBtn">Edit</a>
+            <a  id="deleteBtn" href="#" class="anchorBtn">Delete</a>
+        </div>
+        <div id="serversDiv" style="margin-top: 15px;">
+            <table id="serverTable" width="100%">
+                <thead>
+                    <tr>
+                        <th style="text-align: center"></th>
+                        <th>Description</th>
+                        <th>AE Title</th>
+                        <th>Host Name</th>
+                        <th>DICOM Port</th>
+                        <th>WADO Port</th>
+                        <!-- <th>Retrieve Type</th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <br>
+    </body>
+</html>
