@@ -197,7 +197,7 @@ Ext.extend(Ext.form.ComboBox, Ext.form.TriggerField, {
      * @cfg {String} loadingText The text to display in the dropdown list while data is loading.  Only applies
      * when mode = 'remote' (defaults to 'Loading...')
      */
-    loadingText: 'Loading...',
+    loadingText: 'Carregando...',
     /**
      * @cfg {Boolean} resizable True to add a resize handle to the bottom of the dropdown list (defaults to false)
      */

@@ -51,7 +51,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <div id="tableContainer">
-<table id="queryResult" class="tablesorter">
+<table id="queryResult">
 
 <thead >
 
@@ -126,7 +126,7 @@
 			<td >${birthDate}</td>			
 			<td >${phy_name}</td>
 			<td>
-				<a style="color:#FFFFFF" href="/weasis-pacs-connector/viewer.jnlp?patientID=${patientId}" 
+				<a style="color:#FFFFFF" href="http://${pageContext.request.serverName}:8080/weasis-pacs-connector/viewer.jnlp?patientID=${patientId}" 
 				target="_blank">
 				Abrir Weasis<img src="images/weasis_link.png" alt="Abrir Weasis" height="16" width="16"></a>
 			</td>

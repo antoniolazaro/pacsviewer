@@ -494,7 +494,7 @@ Ajax.InPlaceEditor.prototype = {
         return Form.serialize(form);
       },
       handleLineBreaks: true,
-      loadingText: 'Loading...',
+      loadingText: 'Carregando...',
       savingClassName: 'inplaceeditor-saving',
       loadingClassName: 'inplaceeditor-loading',
       formClassName: 'inplaceeditor-form',

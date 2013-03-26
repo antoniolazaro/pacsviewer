@@ -13,7 +13,7 @@
 
 
 <target name="war">
-<war destfile="dist/gnectviewer-1.1.war" webxml="oviyam/WEB-INF/web.xml">
+<war destfile="dist/gnectviewer.war" webxml="oviyam/WEB-INF/web.xml">
 
 <fileset dir="oviyam"/>
 
@@ -24,7 +24,7 @@
 </war>
 
 <echo message="Copiando arquivo para pasta de build"/>
-	<copy file="dist/gnectviewer-1.1.war" todir="${build.dest}" overwrite="true"/>
+	<copy file="dist/gnectviewer.war" todir="${build.dest}" overwrite="true"/>
 <echo message="OK. Servidor ${build.dest} atualizado."/>
 
 </target>
