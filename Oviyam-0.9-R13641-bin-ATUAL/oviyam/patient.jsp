@@ -51,7 +51,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <div id="tableContainer">
-<table id="queryResult">
+<table id="queryResult" style="width:100%">
 
 <thead >
 

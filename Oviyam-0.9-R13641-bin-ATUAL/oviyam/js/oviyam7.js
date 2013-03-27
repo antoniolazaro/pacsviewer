@@ -541,8 +541,9 @@
 		if((moda=="ALL") && grp=="All Date" && $("patientId").value=="" && $("patientName").value=="" && $("accNo").value=="" && $("birthDate").value==""){
 				
 			var src = confirm("Nenhum filtro foi selecionado. A consulta pode demorar de apresentar resultados. Deseja prosseguir assim mesmo?");
-			if(src==true){					
-				loadPatientInfos(moda,grp);				
+			if(src==true){		
+				loadPatientInfos(moda,grp);							
+				(moda,grp);				
 			}else{
 			}
 		}else{
@@ -568,8 +569,8 @@
 		
 		$('seriesPane').innerHTML="";  // This is causing an issue when multiFrame = yes and the user hits search, not sure where the fix is yet. -JM
 		$('imagePane').innerHTML="";	
-		//sortPatientTable();
-	
+		sortPatientTable();
+		
 		hidepatient=1;
 		if(hidepatient==1){
 			hidePatient();
@@ -677,7 +678,30 @@
 		
 	function sortPatientTable(){
 		if($('queryResult')){
-			var t = new SortableTable($('queryResult'), 100);
+			//alert("vai formartar tabela);
+			jQuery('#queryResult').dataTable({
+			"bRetrieve":true,
+			"bDestroy":true,
+			 "bFilter": false,
+			"oLanguage": {
+	"sProcessing":   "Processando...",
+	"sLengthMenu":   "Mostrar _MENU_ registros",
+	"sZeroRecords":  "N&atilde;o foram encontrados resultados",
+	"sInfo":         "Mostrando de _START_ at&eacute; _END_ de _TOTAL_ registros",
+	"sInfoEmpty":    "Mostrando de 0 at&eacute; 0 de 0 registros",
+	"sInfoFiltered": "(filtrado de _MAX_ registros no total)",
+	"sInfoPostFix":  "",
+	"sSearch":       "Buscar:",
+	"sUrl":          "",
+	"oPaginate": {
+		"sFirst":    "Primeiro",
+		"sPrevious": "Anterior",
+		"sNext":     "Seguinte",
+		"sLast":     "&Uacute;ltimo"
+			   }
+			   }
+			});
+			//var t = new SortableTable($('queryResult'), 100);
 		}else{
 			setTimeout("sortPatientTable()",2000);
 		}

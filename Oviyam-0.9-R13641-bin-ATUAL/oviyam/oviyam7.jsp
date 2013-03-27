@@ -77,6 +77,7 @@
 <script type="text/javascript" language="javascript" src="js/Ruler.js"></script>
 <script type="text/javascript" language="javascript" src="js/lib/raphael-min.js"></script>
 <script type="text/javascript" language="javascript" src="js/lib/raphaelle.js"></script>
+<script type="text/javascript" language="javascript" src="js/table/jquery.dataTables-1.9.4.js"></script>
 
 
 <c:choose>
