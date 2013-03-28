@@ -896,7 +896,7 @@
     .front-div {
     	text-align:left;
     	position:relative;    	
-    	background:url('../images/panelbg1.jpg') repeat ;
+    	//background:url('../images/panelbg1.jpg') repeat ;
     	margin: -1em 0 0em 0em;
     	padding: 1.5em;
     	height:100%;

@@ -27,6 +27,7 @@
 	var nativeColumns = 0;
 	var timeout = null;
     var	latestAjaxRequest = null;
+    var dataTable = null;
     
     $.noConflict();
     //Setup the toolbar handlers. These needed to be jQuery events, because mixing with regular events and jQuery style events was 
@@ -569,6 +570,7 @@
 		
 		$('seriesPane').innerHTML="";  // This is causing an issue when multiFrame = yes and the user hits search, not sure where the fix is yet. -JM
 		$('imagePane').innerHTML="";	
+		alert("loadPatientInfos");
 		sortPatientTable();
 		
 		hidepatient=1;
@@ -677,12 +679,16 @@
 	}
 		
 	function sortPatientTable(){
+	
+	alert($('queryResult'));
 		if($('queryResult')){
-			//alert("vai formartar tabela);
-			jQuery('#queryResult').dataTable({
-			"bRetrieve":true,
-			"bDestroy":true,
+		     
+		     if(dataTable == null){
+			 dataTable = jQuery('#queryResult').dataTable({
 			 "bFilter": false,
+			  "bPaginate": false,
+			  "bDestroy": true,
+			  "bRetrieve": true,
 			"oLanguage": {
 	"sProcessing":   "Processando...",
 	"sLengthMenu":   "Mostrar _MENU_ registros",
@@ -701,6 +707,7 @@
 			   }
 			   }
 			});
+			}			
 			//var t = new SortableTable($('queryResult'), 100);
 		}else{
 			setTimeout("sortPatientTable()",2000);

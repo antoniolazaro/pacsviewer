@@ -64,7 +64,7 @@
 <script type="text/javascript" language="javascript" src="js/imageZoom.js"></script>
 <script type="text/javascript" language="javascript" src="js/ajaxLoadPage.js"></script>
 <script type="text/javascript" language="javascript" src="js/keyNavigation.js"></script>
-<script type="text/javascript" language="javascript" src="js/sortTable.js"></script>
+<%--script type="text/javascript" language="javascript" src="js/sortTable.js"></script--%>
 <script type="text/javascript" language="javascript" src="js/webtoolkit.sortabletable.js"></script>
 <script type="text/javascript" language="javascript" src="js/src/scriptaculous.js"></script>
 <script type="text/javascript" language="javascript" src="js/DatePicker.js"></script>
@@ -78,7 +78,6 @@
 <script type="text/javascript" language="javascript" src="js/lib/raphael-min.js"></script>
 <script type="text/javascript" language="javascript" src="js/lib/raphaelle.js"></script>
 <script type="text/javascript" language="javascript" src="js/table/jquery.dataTables-1.9.4.js"></script>
-
 
 <c:choose>
 	<c:when test="${param.studyUID != null && param.seriesUID!=null}">
@@ -616,7 +615,7 @@
 				document.getElementById('searchPane').style.visibility='hidden';
 				file = "patient.jsp?modality=${param.modality}&group1=${param.day}&from=${param.from}&to=${param.to}&patientId=${param.patientID}&patientName=${param.patientName}&accessionNumber=${param.accessionNumber}&birthDate=${param.birthDate}";
 				ajaxpage('patientDiv', file );
-				//sortPatientTable();
+				sortPatientTable();
 			</script>
 
 	</c:when>
@@ -630,7 +629,7 @@
                 document.getElementById('searchPane').style.visibility='hidden';
 				file = "patient.jsp?modality=ALL&group1=All Date&patientId=${param.patientID}&patientName=${param.patientName}&accessionNumber=${param.accessionNumber}";
 				ajaxpage('patientDiv', file );
-			    //sortPatientTable();
+			    sortPatientTable();
        	    </script>
         </c:if>
 	</div>

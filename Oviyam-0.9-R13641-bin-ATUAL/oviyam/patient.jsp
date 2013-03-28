@@ -51,6 +51,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <div id="tableContainer">
+			
 <table id="queryResult" style="width:100%">
 
 <thead >
@@ -104,9 +105,9 @@
 							<td id="modalityTD">
 							${modalityInStudy}
 							</td>
-							<%--td id="studyDateTD">
+							<td id="studyDateTD">
 								${studyDates}
-							</td--%>
+							</td>
 							
 						
 						</tr>
