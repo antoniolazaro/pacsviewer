@@ -572,7 +572,7 @@
 		if(hidepatient==1){
 			hidePatient();
 			ajaxpage('patientDiv', filename );		 // Hacky fix to repair Search in multi frame mode		
-			setTimeout("sortPatientTable()",2000);	
+			setTimeout("sortPatientTable()",1000);	
 			$('viewPatient').style.color="#FFFFFF";			
 			$('viewSeries').style.color="#616161";
 			$('gridView').style.color="#616161";
@@ -676,12 +676,7 @@
 	}
 		
 	function sortPatientTable(){
-	
-	alert($('queryResult'));
-		if($('queryResult')){
-		     
-		     if(dataTable == null){
-			 dataTable = jQuery('#queryResult').dataTable({
+	 dataTable = jQuery('#queryResult').dataTable({
 			 "bFilter": false,
 			  "bPaginate": false,
 			  "bDestroy": true,
@@ -704,11 +699,6 @@
 			   }
 			   }
 			});
-			}			
-			//var t = new SortableTable($('queryResult'), 100);
-		}else{
-			setTimeout("sortPatientTable()",2000);
-		}
 	}
 		
 	function addRow(num,pageURL){
