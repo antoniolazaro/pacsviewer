@@ -70,7 +70,6 @@
 		}
 	}
 	
-	
 	function scaleIt(v) {
 		 var scalePhotos = document.getElementsByClassName('scale-image');
 		 floorSize = .26;
@@ -81,8 +80,6 @@
 		 }
 	}	
 
-	
-	
 	function gridView(){		
 		$('left').style.width="0%";		
 		$('left').style.visibility="hidden";
@@ -569,14 +566,13 @@
 		"&modality="+moda+"&group1="+grp+"&from="+$('from').value+"&to="+$('to').value+"&accessionNumber="+$('accNo').value+"&birthDate="+$('birthDate').value.replace(/\//g,''); 
 		
 		$('seriesPane').innerHTML="";  // This is causing an issue when multiFrame = yes and the user hits search, not sure where the fix is yet. -JM
-		$('imagePane').innerHTML="";	
-		alert("loadPatientInfos");
-		sortPatientTable();
+		$('imagePane').innerHTML="";
 		
 		hidepatient=1;
 		if(hidepatient==1){
 			hidePatient();
-			ajaxpage('patientDiv', filename );		 // Hacky fix to repair Search in multi frame mode			
+			ajaxpage('patientDiv', filename );		 // Hacky fix to repair Search in multi frame mode		
+			setTimeout("sortPatientTable()",2000);	
 			$('viewPatient').style.color="#FFFFFF";			
 			$('viewSeries').style.color="#616161";
 			$('gridView').style.color="#616161";
@@ -585,6 +581,7 @@
 		}
 	    ajaxpage('patientDiv', filename );        // Hacky fix to repair Search in multi frame mode
 		$('loadingText').innerHTML='Carregando informações do paciente e os detalhes do estudo...';
+		sortPatientTable();
 	}
 	
 	function loadDataSet(url,imgurl){

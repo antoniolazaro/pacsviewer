@@ -120,7 +120,7 @@
 
 <body id="body"
 	<c:choose><c:when test="${cookie.color != null}">style="background:${cookie.color.value};" </c:when> 
-	<c:otherwise> style="background:#232323;" </c:otherwise></c:choose>>
+	<c:otherwise> style="background:#000000;" </c:otherwise></c:choose>>
 <div id="pageHeader">
 <button id="searchButton" class="button"
 	onclick="resetAll(); ajaxpage('searchTools','SearchPopup.jsp'); new Effect.SlideDown('searchPane',{duration:0.5}); 

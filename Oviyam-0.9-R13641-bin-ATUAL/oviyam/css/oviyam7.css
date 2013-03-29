@@ -363,7 +363,7 @@
 		color:#FFFFFF;		
 		font-size:14px;	
 		border:0px;	
-		table-layout:fixed;
+	/*	table-layout:fixed; */
 	}
 	
 	#queryHeader{
