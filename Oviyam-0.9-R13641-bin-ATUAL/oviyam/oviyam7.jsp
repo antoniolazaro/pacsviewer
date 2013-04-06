@@ -445,7 +445,7 @@
 		<td><!--a href="http://oviyam.raster.in" target="_blank"><img
 			src="images/oviyam_logo_b.png" alt="" title="Oviyam"></a-->
 			<img
-			src="images/rsz_gnect_300_175.jpg" alt="" title="Gnect Viewer">
+			src="images/logo_gnect_rodape.jpg" alt="" title="Gnect Viewer">
 			
 		</td>
 		<td width="300" align="right">
