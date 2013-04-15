@@ -129,17 +129,14 @@
 			<td >${phy_name}</td>
 			<td>
 				<c:set var="ipOrigem" value="${pageContext.request.remoteAddr}"/>
-				${ipOrigem}
 				<c:choose>
 				<c:when test="${fn:startsWith(ipOrigem,'192') or fn:startsWith(ipOrigem,'10') or fn:startsWith(ipOrigem,'127.0.0.1')}">		
-					<a style="color:#FFFFFF" href="http://${pageContext.request.localName}:8080/weasis-pacs-connector/viewer.jnlp?patientID=${patientId}" 
+					<a style="color:#FFFFFF" href="http://${pageContext.request.localAddr}:8080/weasis-pacs-connector/viewer.jnlp?patientID=${patientId}" 
 					target="_blank">
-					internno
 				</c:when>
 				<c:otherwise>		
 					<a style="color:#FFFFFF" href="http://${pageContext.request.serverName}:8080/weasis-pacs-connector/viewer.jnlp?patientID=${patientId}" 
 					target="_blank">
-					externo
 				</c:otherwise>
 				</c:choose>
 				Abrir Weasis<img src="images/weasis_link.png" alt="Abrir Weasis" height="16" width="16"></a>
