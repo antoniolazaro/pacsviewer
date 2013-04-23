@@ -1,0 +1,132 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest-Main-Attributes: AFYF3e6VpnKDgoLEWTYq9tsqmDY=
+Created-By: 1.6.0_26 (Sun Microsystems Inc.)
+SHA1-Digest-Manifest: +tWR2s/NPslH74omkLDQyHulLTs=
+
+Name: org/weasis/launcher/RemotePreferences.class
+SHA1-Digest: PxT65jO7e1pqZwJhjcT3MHEkBGs=
+
+Name: org/weasis/launcher/WeasisLauncher$4.class
+SHA1-Digest: g0NoD6khgaBdvZVPtmcgj5cmDo0=
+
+Name: org/weasis/launcher/WebStartLoader$5.class
+SHA1-Digest: faLye25fYJuQCPFMfGAAgqBjPhE=
+
+Name: org/weasis/launcher/WeasisLauncher$STATE.class
+SHA1-Digest: vojvj2Y61ehh0nxZOoY7nRZx1Kk=
+
+Name: org/weasis/launcher/messages_ru_RU.properties
+SHA1-Digest: 8yu7A1Dqh3nhSaXY37fUpPj7rfY=
+
+Name: org/weasis/launcher/WeasisLauncher.class
+SHA1-Digest: diyf85KU8y5oo5Nr84dL5MCl62s=
+
+Name: org/weasis/launcher/WebstartLauncher.class
+SHA1-Digest: bJI058rXsISmHXm5ZsG+oGOgdR8=
+
+Name: META-INF/maven/org.weasis.launcher/weasis-launcher/pom.xml
+SHA1-Digest: nH3UYFb6++X4XYckitOm2gKO+Aw=
+
+Name: org/weasis/launcher/messages_ja.properties
+SHA1-Digest: vKtZrQctvGT+nEkGHL/TZpcX7pM=
+
+Name: org/weasis/launcher/WebStartLoader$3.class
+SHA1-Digest: VC0X2MfF+stsms1XNq3j7IKEgjk=
+
+Name: org/weasis/launcher/WeasisLauncher$3.class
+SHA1-Digest: hhhniHoZ5Zs8y4m719pK3lGbBUU=
+
+Name: org/weasis/launcher/AutoProcessor$BundleElement.class
+SHA1-Digest: tMoNRYsPoSAUh0ytl7ofSuajxTU=
+
+Name: org/weasis/launcher/WeasisLauncher$5.class
+SHA1-Digest: Wv49O2ED5+vXv9+4xDdyKAQM5Ew=
+
+Name: org/weasis/launcher/messages_fr.properties
+SHA1-Digest: fohOmHJgaKxfs7TjhHLF+yYce44=
+
+Name: org/weasis/launcher/WeasisLauncher$2.class
+SHA1-Digest: eTIjFP6u8E5pzGIx2y9ZjZ2L4e0=
+
+Name: org/weasis/launcher/Messages.class
+SHA1-Digest: nVlufVNOvtH8aCiqXt6aB+FB2VM=
+
+Name: org/weasis/launcher/WebStartLoader.class
+SHA1-Digest: r0AqYXCbba7fcFT+7N1nPJ5XxuA=
+
+Name: org/weasis/launcher/AutoProcessor$1.class
+SHA1-Digest: y9QX0JDhZZM22VWZi1dqlIqkLMw=
+
+Name: org/weasis/launcher/AutoProcessor.class
+SHA1-Digest: aYDua7xOeCiwBtKuR5ovaN2gEnM=
+
+Name: org/weasis/launcher/messages_bg_BG.properties
+SHA1-Digest: I5tjLdq8RSrdUoTlwMAITlCI+oo=
+
+Name: org/weasis/launcher/FileUtil.class
+SHA1-Digest: N6PBbxjS81VTTUl1CCkGrPf6ebQ=
+
+Name: org/weasis/launcher/LookAndFeels.class
+SHA1-Digest: bObBnUGKIDoVdWK3WgliLK8MfqQ=
+
+Name: org/weasis/launcher/LookAndFeels$ReadableLookAndFeelInfo.class
+SHA1-Digest: cFKJt5md2tqbxpi6GifOz2xtE0Y=
+
+Name: org/weasis/launcher/AppletLauncher.class
+SHA1-Digest: K5KSiv+zZ8p0bhri6B1VAX3vnBw=
+
+Name: org/weasis/launcher/messages_de.properties
+SHA1-Digest: WRXUncUeqAfBzr2VcREBiwGoPhU=
+
+Name: META-INF/maven/org.weasis.launcher/weasis-launcher/pom.propertie
+ s
+SHA1-Digest: dhy+oaqH4cOXvV9aJATtoyr58v4=
+
+Name: org/weasis/launcher/messages_it.properties
+SHA1-Digest: wIcGd61XTaejbpF1NANuWVeSiW0=
+
+Name: org/weasis/launcher/messages_es.properties
+SHA1-Digest: J4Jmk5bf8UNi3AngpgoaDG3KmP0=
+
+Name: org/weasis/launcher/HostActivator.class
+SHA1-Digest: XvwvE1/xDXOapnreQpC74zvRhAY=
+
+Name: org/weasis/launcher/messages_el.properties
+SHA1-Digest: eekoiOBrbl9bC309NsXhFIDf6iw=
+
+Name: org/weasis/launcher/WebstartLauncher$1.class
+SHA1-Digest: zyv87Fv1VWWPMbjYkWcTstpbMf8=
+
+Name: org/weasis/launcher/messages_tr.properties
+SHA1-Digest: RtL2E2hBqxQYfs8Mkk8VG3C/amY=
+
+Name: org/weasis/launcher/WebStartLoader$6.class
+SHA1-Digest: NAFgoWBxV+04noFFZ5RWOCl+E1E=
+
+Name: splash.png
+SHA1-Digest: VzrXs4K2RFbj6lJe4t2iydjKPlA=
+
+Name: org/weasis/launcher/WebStartLoader$1.class
+SHA1-Digest: XpRaClthiszhsCOEu5wNuDQvpvg=
+
+Name: org/weasis/launcher/WebStartLoader$2.class
+SHA1-Digest: tbgQTyVxi4NbA0DiXFOaBEW0oV0=
+
+Name: org/weasis/launcher/WeasisLauncher$5$1.class
+SHA1-Digest: 3EL0A7wcnQMPp7Kayft8AWK4DyU=
+
+Name: org/weasis/launcher/messages_pl_PL.properties
+SHA1-Digest: Negpaxr2flCPGat+wqeYFsj38MQ=
+
+Name: org/weasis/launcher/messages.properties
+SHA1-Digest: vnan5cSSgkMmw/aVtMlpXsQgaOE=
+
+Name: org/weasis/launcher/WeasisLauncher$1.class
+SHA1-Digest: 6+mgK+XMzBgDutee+Q1mT/E6fyA=
+
+Name: org/weasis/launcher/WebStartLoader$4.class
+SHA1-Digest: SeJ/GYSP1YK7RkVGkeh/4ldxvUc=
+
+Name: org/weasis/launcher/messages_pt_BR.properties
+SHA1-Digest: l6t9qMq5fbchoPGtwpvfeCKER8U=
+

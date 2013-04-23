@@ -1,0 +1,133 @@
+Manifest-Version: 1.0
+Build-Jdk: 1.6.0_26
+Built-By: nicolas
+Created-By: Apache Maven
+Archiver-Version: Plexus Archiver
+
+Name: org/weasis/launcher/WeasisLauncher$4.class
+SHA1-Digest: uf8fWegf2Vwv/kj8W/N0bxw+75w=
+
+Name: org/weasis/launcher/RemotePreferences.class
+SHA1-Digest: urzYdFk/PVidwYD9EDBzFN9SSZA=
+
+Name: org/weasis/launcher/WeasisLauncher$STATE.class
+SHA1-Digest: EYOYXddWENTp10IfQDugvb3kN1w=
+
+Name: org/weasis/launcher/WebStartLoader$5.class
+SHA1-Digest: FTkJBKklgNGucRdztKw10AmKESE=
+
+Name: org/weasis/launcher/WeasisLauncher.class
+SHA1-Digest: S0D9tWxvI2cTCxn1ZQnKuowxejE=
+
+Name: org/weasis/launcher/messages_ru_RU.properties
+SHA1-Digest: 4CHud/beDmMU0PNROJevHvCASIY=
+
+Name: META-INF/maven/org.weasis.launcher/weasis-launcher/pom.xml
+SHA1-Digest: EpGG2T6gZbaldDhRdgcA2cQY+8E=
+
+Name: org/weasis/launcher/WebstartLauncher.class
+SHA1-Digest: +eIA0AuWlwCedEjlg0HeEuH9BZA=
+
+Name: org/weasis/launcher/messages_ja.properties
+SHA1-Digest: bSrtgL/jZDWj05HX1NhW+F2aY6o=
+
+Name: org/weasis/launcher/WebStartLoader$3.class
+SHA1-Digest: DxJ7ViTCZt/vNmINqMaATfd+7+M=
+
+Name: org/weasis/launcher/WeasisLauncher$3.class
+SHA1-Digest: ok2GEkbEHl0sO9K1PGj9e3q7GWc=
+
+Name: org/weasis/launcher/AutoProcessor$BundleElement.class
+SHA1-Digest: MS2IpoUDkyGyI0zy0zBRqzEWJfU=
+
+Name: org/weasis/launcher/WeasisLauncher$5.class
+SHA1-Digest: c0F7XD1HvxMCbnKdlmYnQNwd5mw=
+
+Name: org/weasis/launcher/messages_fr.properties
+SHA1-Digest: 17KivxhAxrzstMIyKSWo8JDNA1g=
+
+Name: org/weasis/launcher/WeasisLauncher$2.class
+SHA1-Digest: 26woXeWURdmCINC9LHQg4E3rlQc=
+
+Name: org/weasis/launcher/Messages.class
+SHA1-Digest: QmABcA+1gb/qddXjMRzYSW6TIC8=
+
+Name: org/weasis/launcher/WebStartLoader.class
+SHA1-Digest: +Q4YceW5cfFyyw0r/vnSosZAGD8=
+
+Name: org/weasis/launcher/AutoProcessor$1.class
+SHA1-Digest: /sQCKZ4wuqIfKdMVvB8jLGappl4=
+
+Name: org/weasis/launcher/AutoProcessor.class
+SHA1-Digest: yFUGg9fJsDVimBgKlKujj2MgDUs=
+
+Name: org/weasis/launcher/messages_bg_BG.properties
+SHA1-Digest: igVuZeRRgjnLRgD7OHrqbxYpZ5U=
+
+Name: org/weasis/launcher/FileUtil.class
+SHA1-Digest: IB0kWjCBFR8uWMfxOLepBkwb8/k=
+
+Name: org/weasis/launcher/LookAndFeels.class
+SHA1-Digest: hz5f/a95EoqTuRsYF4G3JAYNiQE=
+
+Name: org/weasis/launcher/LookAndFeels$ReadableLookAndFeelInfo.class
+SHA1-Digest: AcyoDeKHSntiarGnn9TDjdcDp9E=
+
+Name: org/weasis/launcher/AppletLauncher.class
+SHA1-Digest: itELyj8zvNSPOOL1kE/nLsIciuI=
+
+Name: org/weasis/launcher/messages_de.properties
+SHA1-Digest: 39apW+QSm7UHYPdvHnLtIHd+YRM=
+
+Name: META-INF/maven/org.weasis.launcher/weasis-launcher/pom.propertie
+ s
+SHA1-Digest: tffOSnSC357J5FRC0WgDroX4Idk=
+
+Name: org/weasis/launcher/messages_es.properties
+SHA1-Digest: tyHm3r5nIH1Zy4YhWBMsBbjnYwU=
+
+Name: org/weasis/launcher/messages_it.properties
+SHA1-Digest: 6ZC9tiTLWDFLyAbTWn//YOXZ63w=
+
+Name: org/weasis/launcher/HostActivator.class
+SHA1-Digest: wxN16WHOqOGc5gmAzY10aCOgw9c=
+
+Name: org/weasis/launcher/WebstartLauncher$1.class
+SHA1-Digest: LKDZlLUKBXRBHBpweKEk8f3OJLA=
+
+Name: org/weasis/launcher/messages_el.properties
+SHA1-Digest: rs5ruwtWu4CpJGsyLsdRu32q4fk=
+
+Name: org/weasis/launcher/messages_tr.properties
+SHA1-Digest: AoNSkWPN37WGDvzT9F3Q4Ms/Dro=
+
+Name: org/weasis/launcher/WebStartLoader$6.class
+SHA1-Digest: BxhX9E+GmbGO1x4XC1zQICSBeK8=
+
+Name: org/weasis/launcher/WebStartLoader$1.class
+SHA1-Digest: ID0oJWZV8uqigoMeKbdMPSTJoCU=
+
+Name: splash.png
+SHA1-Digest: UhMuJDxDyZ5CWbTDP2B/ce6RbnE=
+
+Name: org/weasis/launcher/WebStartLoader$2.class
+SHA1-Digest: rMXtlEt0BzgEutzSjPB+BMwTFJA=
+
+Name: org/weasis/launcher/WeasisLauncher$5$1.class
+SHA1-Digest: isOGFHUBJ1BPO3OCTRz4lHhELvU=
+
+Name: org/weasis/launcher/messages.properties
+SHA1-Digest: d41+hMxN7w2dunLsVhWx7elViY8=
+
+Name: org/weasis/launcher/messages_pl_PL.properties
+SHA1-Digest: GjgYMiY5EN2IkGQaLwpV0ihZ/hI=
+
+Name: org/weasis/launcher/WeasisLauncher$1.class
+SHA1-Digest: iWoJc1b4gh8T97ClO4W77nBsz4s=
+
+Name: org/weasis/launcher/WebStartLoader$4.class
+SHA1-Digest: MJC0w5WiSAgkqRwfIF6ezbs5zCM=
+
+Name: org/weasis/launcher/messages_pt_BR.properties
+SHA1-Digest: 3il6k5D+RcR0tjaz4qfN3ZfuHUI=
+

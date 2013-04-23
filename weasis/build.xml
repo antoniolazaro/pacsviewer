@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<project name="Weasis" default="war">
+
+<property name="build.dest" value="/Users/antoniolazarocarvalhoborges/Desenvolvimento/PACS/dcm4chee-2013/dcm4chee-2.17.3-mysql/server/default/deploy"/>
+
+<target name="war">
+<war destfile="dist/weasis.war" webxml="weasis/WEB-INF/web.xml">
+
+<fileset dir="weasis"/>
+
+<lib dir="weasis/WEB-INF/lib"/>
+
+<classes dir="weasis/WEB-INF/classes"/>
+
+</war>
+
+<echo message="Copiando weasis para pasta de build"/>
+	<copy file="dist/weasis.war" todir="${build.dest}" overwrite="true"/>
+<echo message="OK. Servidor ${build.dest} atualizado."/>
+
+</target>
+
+</project>
