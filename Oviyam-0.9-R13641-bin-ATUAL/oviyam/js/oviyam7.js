@@ -568,20 +568,23 @@
 		$('seriesPane').innerHTML="";  // This is causing an issue when multiFrame = yes and the user hits search, not sure where the fix is yet. -JM
 		$('imagePane').innerHTML="";
 		
+		
 		hidepatient=1;
 		if(hidepatient==1){
 			hidePatient();
-			ajaxpage('patientDiv', filename );		 // Hacky fix to repair Search in multi frame mode		
-			setTimeout("sortPatientTable()",1000);	
+			ajaxpage('patientDiv', filename);		 // Hacky fix to repair Search in multi frame mode	
+			//setTimeout("sortPatientTable()",1000);	
+	
 			$('viewPatient').style.color="#FFFFFF";			
 			$('viewSeries').style.color="#616161";
 			$('gridView').style.color="#616161";
 			$('mosaicView').style.color="#616161";
 			return false;			
 		}
-	    ajaxpage('patientDiv', filename );        // Hacky fix to repair Search in multi frame mode
+	    ajaxpage('patientDiv', filename);	       // Hacky fix to repair Search in multi frame mode
 		$('loadingText').innerHTML='Carregando informações do paciente e os detalhes do estudo...';
-		sortPatientTable();
+		
+		//setTimeout("sortPatientTable()",1000);	
 	}
 	
 	function loadDataSet(url,imgurl){
@@ -676,11 +679,25 @@
 	}
 		
 	function sortPatientTable(){
+		if(jQuery('#queryResult')){
+			console.log("vai criar tabela");
+			initTable()
+		}else{
+			console.log("vai dar delay tabela");
+			setTimeout("sortPatientTable()",2000);
+		}
+	}
+	
+	function initTable(){
+	console.log("vai iniciar tabela");
 	 dataTable = jQuery('#queryResult').dataTable({
 			 "bFilter": false,
-			  "bPaginate": false,
+			  "bPaginate": true,
 			  "bDestroy": true,
 			  "bRetrieve": true,
+			  "iDisplayLength": 10,           
+        "bLengthChange": false,
+        "sScrollY": 600,
 			"oLanguage": {
 	"sProcessing":   "Processando...",
 	"sLengthMenu":   "Mostrar _MENU_ registros",
@@ -688,14 +705,12 @@
 	"sInfo":         "Mostrando de _START_ at&eacute; _END_ de _TOTAL_ registros",
 	"sInfoEmpty":    "Mostrando de 0 at&eacute; 0 de 0 registros",
 	"sInfoFiltered": "(filtrado de _MAX_ registros no total)",
-	"sInfoPostFix":  "",
 	"sSearch":       "Buscar:",
-	"sUrl":          "",
 	"oPaginate": {
-		"sFirst":    "Primeiro",
-		"sPrevious": "Anterior",
-		"sNext":     "Seguinte",
-		"sLast":     "&Uacute;ltimo"
+		"sFirst":    "Primeiro << ",
+		"sPrevious": " Anterior < ",
+		"sNext":     " Seguinte > ",
+		"sLast":     " &Uacute;ltimo >>"
 			   }
 			   }
 			});

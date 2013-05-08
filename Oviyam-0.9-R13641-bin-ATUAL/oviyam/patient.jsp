@@ -51,9 +51,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 
-<div id="tableContainer">
+<div id="tableContainer" style="width:100%">
 			
-<table id="queryResult" style="width:100%">
+<table id="queryResult">
 
 <thead >
 

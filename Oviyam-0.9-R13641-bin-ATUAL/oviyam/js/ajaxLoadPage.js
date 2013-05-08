@@ -37,7 +37,7 @@ var directSeries=0;
 			}
 		}
 	}
-	
+
 	var setImage = false;
 	
 	function loadpage(page_request, containerid, url){
@@ -49,7 +49,7 @@ var directSeries=0;
 				document.getElementById(containerid).innerHTML = pr;
 			
 			document.getElementById("loadingView").style.visibility="hidden";
-
+			
 			setPatientInfos();
 			if(setImage == true){
 			    // This function call actually downloads the images that wind up in the thumbnails, ImageContainer.jsp just puts thumbnails in there, and sets the name
@@ -61,6 +61,7 @@ var directSeries=0;
 			 loadSeriesImage();
 			 directSeries=0;
 			}			
+			sortPatientTable();
 			//urchinTracker(url);
 		}
 	}
