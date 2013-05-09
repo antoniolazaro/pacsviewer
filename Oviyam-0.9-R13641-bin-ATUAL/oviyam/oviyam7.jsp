@@ -78,6 +78,7 @@
 <script type="text/javascript" language="javascript" src="js/lib/raphael-min.js"></script>
 <script type="text/javascript" language="javascript" src="js/lib/raphaelle.js"></script>
 <script type="text/javascript" language="javascript" src="js/table/jquery.dataTables-1.9.4.js"></script>
+<link type="text/css" href="css/jquery.dataTables.css" rel="stylesheet" />
 
 <c:choose>
 	<c:when test="${param.studyUID != null && param.seriesUID!=null}">

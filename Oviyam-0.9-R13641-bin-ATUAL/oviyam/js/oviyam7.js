@@ -680,37 +680,38 @@
 		
 	function sortPatientTable(){
 		if(jQuery('#queryResult')){
-			console.log("vai criar tabela");
 			initTable()
 		}else{
-			console.log("vai dar delay tabela");
 			setTimeout("sortPatientTable()",2000);
 		}
 	}
 	
 	function initTable(){
-	console.log("vai iniciar tabela");
 	 dataTable = jQuery('#queryResult').dataTable({
 			 "bFilter": false,
 			  "bPaginate": true,
-			  "bDestroy": true,
+			  "bJQueryUI": true,
+			    "sScrollY": 650,
 			  "bRetrieve": true,
-			  "iDisplayLength": 10,           
+			  "iDisplayLength": 10,    
+			  "bDestroy": true,
+			          
+			  "sPaginationType": "full_numbers",
         "bLengthChange": false,
         "sScrollY": 600,
 			"oLanguage": {
 	"sProcessing":   "Processando...",
-	"sLengthMenu":   "Mostrar _MENU_ registros",
-	"sZeroRecords":  "N&atilde;o foram encontrados resultados",
-	"sInfo":         "Mostrando de _START_ at&eacute; _END_ de _TOTAL_ registros",
-	"sInfoEmpty":    "Mostrando de 0 at&eacute; 0 de 0 registros",
-	"sInfoFiltered": "(filtrado de _MAX_ registros no total)",
+	"sLengthMenu":   "Mostrar _MENU_ exames",
+	"sZeroRecords":  "N&atilde;o foram encontrados exames",
+	"sInfo":         "Mostrando de _START_ at&eacute; _END_ de _TOTAL_ exames    ",
+	"sInfoEmpty":    "Mostrando de 0 at&eacute; 0 de 0 exames   ",
+	"sInfoFiltered": "(filtrado de _MAX_ exames no total)",
 	"sSearch":       "Buscar:",
 	"oPaginate": {
-		"sFirst":    "Primeiro << ",
-		"sPrevious": " Anterior < ",
-		"sNext":     " Seguinte > ",
-		"sLast":     " &Uacute;ltimo >>"
+		"sFirst":    "<< ",
+		"sPrevious": " < ",
+		"sNext":     " > ",
+		"sLast":     " >> "
 			   }
 			   }
 			});

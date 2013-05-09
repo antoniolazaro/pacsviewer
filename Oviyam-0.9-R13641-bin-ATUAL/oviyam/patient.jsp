@@ -58,7 +58,7 @@
 <thead >
 
 	<tr>
-					<td  title="Ordenar" >NO</td>
+					<td  title="Ordenar">NO</td>
 					<td  title="Ordenar">Nome</td>
 					<td  title="Ordenar">ID do Paciente</td>				
 					<td  title="Ordenar">Sexo</td>
