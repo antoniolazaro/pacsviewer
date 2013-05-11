@@ -78,17 +78,10 @@
 <script type="text/javascript" language="javascript" src="js/lib/raphael-min.js"></script>
 <script type="text/javascript" language="javascript" src="js/lib/raphaelle.js"></script>
 <script type="text/javascript" language="javascript" src="js/table/jquery.dataTables-1.9.4.js"></script>
-<script type="text/javascript" language="javascript" src="js/table/jquery-ui.min.js"></script>
 <link type="text/css" href="css/jquery.dataTables.css" rel="stylesheet" />
 <link type="text/css" href="css/jquery.dataTables_themeroller.css" rel="stylesheet" />
 <link type="text/css" href="css/jquery-ui.css" rel="stylesheet" />
-
- <script type="text/javascript">
- 
- 	
-   </script>	
-
-
+	
 <c:choose>
 	<c:when test="${param.studyUID != null && param.seriesUID!=null}">
 		<link type="text/css" rel="StyleSheet" href="./css/Study.css" />
@@ -132,10 +125,6 @@
 	<c:choose><c:when test="${cookie.color != null}">style="background:${cookie.color.value};" </c:when> 
 	<c:otherwise> style="background:#000000;" </c:otherwise></c:choose>>
 
-<div id="helpDialog" title="Ajuda Gnect Viewer" style="display:none;background-color:white;">
-  <p>O objetivo dessa janela é fornecer ajuda para que o usuário possa utilizar o Gnect Viewer e o Weasis de maneira fácil.</p>
-</div>
-
 <div id="pageHeader">
 
 <button id="searchButton" class="button"
@@ -148,13 +137,10 @@
 	return false;">Pesquisar
 </button>
 
-<div id="patientDisName"></div>
-
 <button id="hideButton" class="button" onclick="hideTools();">Ferramentas</button>
 
 <button id="ajudaButton" class="button"
   	onclick="if($('mymovie') != null) document.getElementById('mymovie').style.visibility='visible'; keynav=1; new Effect.SlideUp('searchPane',{duration:0.5}); return false; keynav=1;
-  	$( '#helpDialog' ).dialog( 'open');
   	">
 	Ajuda?
 </button>
