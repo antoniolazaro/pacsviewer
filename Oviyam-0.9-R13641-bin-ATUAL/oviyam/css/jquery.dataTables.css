@@ -12,7 +12,7 @@ table.dataTable thead th {
 	font-weight: bold;
 	font-style: italic;
 	cursor: pointer;
-	color:#FFFFFF;		
+	color:#000000;		
 	font-size:15px;
 	*cursor: hand;
 }
@@ -20,7 +20,7 @@ table.dataTable thead th {
 table.dataTable tfoot th {
 	font-weight: bold;
 	font-style: italic;
-	color:#FFFFFF;	
+	color:#000000;	
 	font-size:15px;
 }
 
@@ -81,7 +81,7 @@ table.dataTable tr.even td.sorting_3 { background-color: #F9F9FF; }
 	float: left;
 	font-weight: bold;
 	font-style: italic;
-	color:#FFFFFF;	
+	color:#000000;	
 	font-size:15px;
 }
 
@@ -156,7 +156,7 @@ table.dataTable tr.even td.sorting_3 { background-color: #F9F9FF; }
 	line-height: 22px;
 	font-weight: bold;
 	font-style: italic;
-	color:#FFFFFF;	
+	color:#000000;	
 	font-size:15px;
 }
 .paging_full_numbers a:active {
@@ -178,21 +178,21 @@ table.dataTable tr.even td.sorting_3 { background-color: #F9F9FF; }
 	*cursor: hand;
 	font-weight: bold;
 	font-style: italic;
-	color:#FFFFFF;	
+	color:#000000;	
 	font-size:15px;
 }
 
 .paging_full_numbers a.paginate_button {
 	font-weight: bold;
 	font-style: italic;
-	color:#FFFFFF;	
+	color:#000000;	
 	font-size:15px;
 }
 
 .paging_full_numbers a.paginate_button:hover {
 	font-weight: bold;
 	font-style: italic;
-	color:#FFFFFF;	
+	color:#000000;	
 	font-size:15px;
 	text-decoration: none !important;
 }
@@ -200,7 +200,7 @@ table.dataTable tr.even td.sorting_3 { background-color: #F9F9FF; }
 .paging_full_numbers a.paginate_active {
 	font-weight: bold;
 	font-style: italic;
-	color:#FFFFFF;	
+	color:#000000;	
 	font-size:15px;
 }
 

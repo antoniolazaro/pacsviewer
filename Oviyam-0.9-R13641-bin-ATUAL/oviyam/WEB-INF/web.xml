@@ -50,6 +50,16 @@
 		<servlet-class>in.raster.oviyam.servlet.MultiFrames</servlet-class>
 	</servlet>	
 	
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>		
+		<servlet-class>br.com.gnect.oviyam.LogoutServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	
 	<servlet-mapping>
 		<servlet-name>MultiFrames</servlet-name>
 		<url-pattern>/MFrames</url-pattern>

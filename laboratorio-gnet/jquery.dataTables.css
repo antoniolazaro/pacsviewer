@@ -1,5 +1,4 @@
 
-
 /*
  * Table
  */
@@ -7,21 +6,27 @@ table.dataTable {
 	margin: 0 auto;
 	clear: both;
 	width: 100%;
-	border-collapse: collapse;
 }
 
 table.dataTable thead th {
-	padding: 3px 0px 3px 10px;
+	font-weight: bold;
+	font-style: italic;
 	cursor: pointer;
+	color:#FFFFFF;		
+	font-size:15px;
 	*cursor: hand;
 }
 
 table.dataTable tfoot th {
-	padding: 3px 10px;
+	font-weight: bold;
+	font-style: italic;
+	color:#FFFFFF;	
+	font-size:15px;
 }
 
 table.dataTable td {
-	padding: 3px 10px;
+	color:#FFFFFF;	
+	font-size:15px;
 }
 
 table.dataTable td.center,
@@ -29,8 +34,6 @@ table.dataTable td.dataTables_empty {
 	text-align: center;
 }
 
-table.dataTable tr.odd { background-color: black; }
-table.dataTable tr.even { background-color: black; }
 /*
 table.dataTable tr.odd { background-color: #E2E4FF; }
 table.dataTable tr.even { background-color: white; }
@@ -50,12 +53,6 @@ table.dataTable tr.even td.sorting_3 { background-color: #F9F9FF; }
 	position: relative;
 	clear: both;
 	*zoom: 1;
-}
-.dataTables_wrapper .ui-widget-header {
-	font-weight: normal;
-}
-.dataTables_wrapper .ui-toolbar {
-	padding: 5px;
 }
 
 
@@ -80,9 +77,12 @@ table.dataTable tr.even td.sorting_3 { background-color: #F9F9FF; }
  * Table information
  */
 .dataTables_info {
-	padding-top: 3px;
 	clear: both;
 	float: left;
+	font-weight: bold;
+	font-style: italic;
+	color:#FFFFFF;	
+	font-size:15px;
 }
 
 
@@ -90,26 +90,8 @@ table.dataTable tr.even td.sorting_3 { background-color: #F9F9FF; }
  * Pagination
  */
 .dataTables_paginate {
-	float: right;
-	text-align: right;
-}
-
-.dataTables_paginate .ui-button {
-	margin-right: -0.1em !important;
-}
-
-.paging_two_button .ui-button {
 	float: left;
-	cursor: pointer;
-	* cursor: hand;
-}
-
-.paging_full_numbers .ui-button {
-	padding: 2px 6px;
-	margin: 0;
-	cursor: pointer;
-	* cursor: hand;
-	color: #333 !important;
+	text-align: left;
 }
 
 /* Two button pagination - previous / next */
@@ -143,13 +125,22 @@ table.dataTable tr.even td.sorting_3 { background-color: #F9F9FF; }
 .paginate_disabled_previous,
 .paginate_enabled_previous {
 	padding-left: 23px;
+	font-weight: bold;
+	font-style: italic;
+	color:#FFFFFF;	
+	font-size:15px;
 }
 .paginate_disabled_next,
 .paginate_enabled_next {
 	padding-right: 23px;
 	margin-left: 10px;
+	font-weight: bold;
+	font-style: italic;
+	color:#FFFFFF;	
+	font-size:15px;
 }
 
+/*
 .paginate_enabled_previous { background: url('../images/back_enabled.png') no-repeat top left; }
 .paginate_enabled_previous:hover { background: url('../images/back_enabled_hover.png') no-repeat top left; }
 .paginate_disabled_previous { background: url('../images/back_disabled.png') no-repeat top left; }
@@ -157,8 +148,17 @@ table.dataTable tr.even td.sorting_3 { background-color: #F9F9FF; }
 .paginate_enabled_next { background: url('../images/forward_enabled.png') no-repeat top right; }
 .paginate_enabled_next:hover { background: url('../images/forward_enabled_hover.png') no-repeat top right; }
 .paginate_disabled_next { background: url('../images/forward_disabled.png') no-repeat top right; }
+*/
 
 /* Full number pagination */
+.paging_full_numbers {
+	height: 22px;
+	line-height: 22px;
+	font-weight: bold;
+	font-style: italic;
+	color:#FFFFFF;	
+	font-size:15px;
+}
 .paging_full_numbers a:active {
 	outline: none
 }
@@ -176,20 +176,32 @@ table.dataTable tr.even td.sorting_3 { background-color: #F9F9FF; }
 	margin: 0 3px;
 	cursor: pointer;
 	*cursor: hand;
-	color: #333 !important;
+	font-weight: bold;
+	font-style: italic;
+	color:#FFFFFF;	
+	font-size:15px;
 }
 
 .paging_full_numbers a.paginate_button {
-	background-color: #ddd;
+	font-weight: bold;
+	font-style: italic;
+	color:#FFFFFF;	
+	font-size:15px;
 }
 
 .paging_full_numbers a.paginate_button:hover {
-	background-color: #ccc;
+	font-weight: bold;
+	font-style: italic;
+	color:#FFFFFF;	
+	font-size:15px;
 	text-decoration: none !important;
 }
 
 .paging_full_numbers a.paginate_active {
-	background-color: #99B3FF;
+	font-weight: bold;
+	font-style: italic;
+	color:#FFFFFF;	
+	font-size:15px;
 }
 
 
@@ -216,19 +228,19 @@ table.dataTable tr.even td.sorting_3 { background-color: #F9F9FF; }
 /*
  * Sorting
  */
-table.dataTable thead th div.DataTables_sort_wrapper {
-	position: relative;
-	padding-right: 20px;
-}
+ 
+ /*
+.sorting { background: url('../images/sort_both.png') no-repeat center right; }
+.sorting_asc { background: url('../images/sort_asc.png') no-repeat center right; }
+.sorting_desc { background: url('../images/sort_desc.png') no-repeat center right; }
 
-table.dataTable thead th div.DataTables_sort_wrapper span {
-	position: absolute;
-	top: 50%;
-	margin-top: -8px;
-	right: 0;
-}
-
-table.dataTable th:active {
+.sorting_asc_disabled { background: url('../images/sort_asc_disabled.png') no-repeat center right; }
+.sorting_desc_disabled { background: url('../images/sort_desc_disabled.png') no-repeat center right; }
+ 
+ */
+ 
+table.dataTable thead th:active,
+table.dataTable thead td:active {
 	outline: none;
 }
 

@@ -688,30 +688,24 @@
 	
 	function initTable(){
 	 dataTable = jQuery('#queryResult').dataTable({
-			 "bFilter": false,
-			  "bPaginate": true,
 			  "bJQueryUI": true,
-			    "sScrollY": 650,
-			  "bRetrieve": true,
-			  "iDisplayLength": 10,    
-			  "bDestroy": true,
-			          
 			  "sPaginationType": "full_numbers",
-        "bLengthChange": false,
-        "sScrollY": 600,
+			  			  "bDestroy": true,
+			  "bRetrieve": true,
+			  			  "iDisplayLength": 2,    
 			"oLanguage": {
 	"sProcessing":   "Processando...",
 	"sLengthMenu":   "Mostrar _MENU_ exames",
 	"sZeroRecords":  "N&atilde;o foram encontrados exames",
-	"sInfo":         "Mostrando de _START_ at&eacute; _END_ de _TOTAL_ exames    ",
+	"sInfo":         "Mostrando de _START_ at&eacute; _END_ de um totol de _TOTAL_ exames    ",
 	"sInfoEmpty":    "Mostrando de 0 at&eacute; 0 de 0 exames   ",
 	"sInfoFiltered": "(filtrado de _MAX_ exames no total)",
 	"sSearch":       "Buscar:",
 	"oPaginate": {
-		"sFirst":    "<< ",
-		"sPrevious": " < ",
-		"sNext":     " > ",
-		"sLast":     " >> "
+		"sFirst":    "Primeira",
+		"sPrevious": "Anterior",
+		"sNext":     "Pr&oacute;xima",
+		"sLast":     "&Uacute;ltima"
 			   }
 			   }
 			});
